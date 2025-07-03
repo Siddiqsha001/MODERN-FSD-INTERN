@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust - Your Travel Companion</title>
+    <link rel="stylesheet" href="travelStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="parallax-container" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&w=1600');">
+        <header>
+            <div class="logo">
+                <h1>Wanderlust</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#planner">Trip Planner</a></li>
+                    <li><a href="#tips">Travel Tips</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="animate-text">Explore the World</h1>
+                <p>Your personal travel companion for unforgettable adventures</p>
+                <div class="search-container">
+                    <input type="text" placeholder="Where would you like to go?">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="cta-buttons">
+                    <button class="cta-btn primary">Plan My Trip</button>
+                    <button class="cta-btn secondary">Discover Destinations</button>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+    </div>
+
+    <section id="destinations" class="destinations">
+        <div class="section-header">
+            <h2>Popular Destinations</h2>
+            <p>Discover breathtaking locations around the globe</p>
+        </div>
+        <div class="destination-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="beach">Beaches</button>
+            <button class="filter-btn" data-filter="mountain">Mountains</button>
+            <button class="filter-btn" data-filter="city">Cities</button>
+            <button class="filter-btn" data-filter="historical">Historical</button>
+        </div>
+        <div class="destinations-grid">
+            <div class="destination-card" data-category="beach">
+                <div class="destination-img">
+                    <img src="https://images.pexels.com/photos/1098365/pexels-photo-1098365.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bali">
+                    <div class="destination-price">From $899</div>
+                </div>
+                <div class="destination-info">
+                    <h3>Bali, Indonesia</h3>
+                    <div class="destination-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.5 (120 reviews)</span>
+                    </div>
+                    <p>Tropical paradise with stunning beaches and vibrant culture.</p>
+                    <div class="destination-meta">
+                        <span><i class="fas fa-calendar-alt"></i> 7-10 days</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Southeast Asia</span>
+                    </div>
+                    <button class="view-btn">Explore Destination</button>
+                </div>
+            </div>
+            <div class="destination-card" data-category="mountain">
+                <div class="destination-img">
+                    <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Switzerland">
+                    <div class="destination-price">From $1299</div>
+                </div>
+                <div class="destination-info">
+                    <h3>Swiss Alps, Switzerland</h3>
+                    <div class="destination-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.9 (204 reviews)</span>
+                    </div>
+                    <p>Majestic mountains and picturesque villages for the perfect getaway.</p>
+                    <div class="destination-meta">
+                        <span><i class="fas fa-calendar-alt"></i> 5-14 days</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Europe</span>
+                    </div>
+                    <button class="view-btn">Explore Destination</button>
+                </div>
+            </div>
+            <div class="destination-card" data-category="city">
+                <div class="destination-img">
+                    <img src="https://images.pexels.com/photos/2506923/pexels-photo-2506923.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tokyo">
+                    <div class="destination-price">From $1199</div>
+                </div>
+                <div class="destination-info">
+                    <h3>Tokyo, Japan</h3>
+                    <div class="destination-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.8 (315 reviews)</span>
+                    </div>
+                    <p>Ultra-modern metropolis with ancient traditions and cutting-edge technology.</p>
+                    <div class="destination-meta">
+                        <span><i class="fas fa-calendar-alt"></i> 7-12 days</span>
+                        <span><i class="fas fa-map-marker-alt"></i> East Asia</span>
+                    </div>
+                    <button class="view-btn">Explore Destination</button>
+                </div>
+            </div>
+            <div class="destination-card" data-category="historical">
+                <div class="destination-img">
+                    <img src="https://images.pexels.com/photos/532263/pexels-photo-532263.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Rome">
+                    <div class="destination-price">From $899</div>
+                </div>
+                <div class="destination-info">
+                    <h3>Rome, Italy</h3>
+                    <div class="destination-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.6 (283 reviews)</span>
+                    </div>
+                    <p>Ancient history, art treasures and iconic landmarks at every turn.</p>
+                    <div class="destination-meta">
+                        <span><i class="fas fa-calendar-alt"></i> 5-10 days</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Europe</span>
+                    </div>
+                    <button class="view-btn">Explore Destination</button>
+                </div>
+            </div>
+        </div>
+        <button class="load-more">Load More Destinations</button>
+    </section>
+
+    <section class="featured-experience">
+        <div class="experience-content">
+            <span class="subtitle">Featured Experience</span>
+            <h2>Northern Lights Adventure</h2>
+            <p>Witness the magical aurora borealis dancing across the Arctic sky. This once-in-a-lifetime adventure takes you to the remote wilderness of Iceland for the perfect viewing conditions.</p>
+            <ul class="experience-highlights">
+                <li><i class="fas fa-check-circle"></i> Expert local guides</li>
+                <li><i class="fas fa-check-circle"></i> Small group tours available</li>
+                <li><i class="fas fa-check-circle"></i> Photography tips included</li>
+                <li><i class="fas fa-check-circle"></i> Cozy accommodations</li>
+            </ul>
+            <button class="cta-btn primary">Book This Experience</button>
+        </div>
+        <div class="experience-image">
+            <img src="https://images.pexels.com/photos/1693095/pexels-photo-1693095.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Northern Lights">
+        </div>
+    </section>
+
+    <section id="planner" class="trip-planner">
+        <div class="section-header">
+            <h2>Trip Planner</h2>
+            <p>Create your perfect itinerary with our easy-to-use tools</p>
+        </div>
+        <div class="planner-container">
+            <div class="planner-sidebar">
+                <div class="planner-form">
+                    <h3>Plan Your Journey</h3>
+                    <div class="form-group">
+                        <label>Destination</label>
+                        <input type="text" placeholder="Where to?">
+                    </div>
+                    <div class="form-group date-inputs">
+                        <div>
+                            <label>Check-in</label>
+                            <input type="date">
+                        </div>
+                        <div>
+                            <label>Check-out</label>
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Travelers</label>
+                        <select>
+                            <option value="1">1 Person</option>
+                            <option value="2" selected>2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5+">5+ People</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Trip Type</label>
+                        <select>
+                            <option value="relaxation">Relaxation</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="culture">Cultural</option>
+                            <option value="family">Family</option>
+                            <option value="romantic">Romantic</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Budget</label>
+                        <div class="range-slider">
+                            <input type="range" min="100" max="10000" value="2000" class="range">
+                            <div class="budget-value">$2000</div>
+                        </div>
+                    </div>
+                    <button class="cta-btn primary full-width">Generate Itinerary</button>
+                </div>
+            </div>
+            <div class="planner-map">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Interactive map will be displayed here</p>
+                    <p class="small">Select a destination to start planning</p>
+                </div>
+            </div>
+        </div>
+        <div class="sample-itinerary">
+            <h3>Example Itinerary: Weekend in Paris</h3>
+            <div class="itinerary-timeline">
+                <div class="day">
+                    <h4>Day 1</h4>
+                    <div class="timeline-item">
+                        <span class="time">09:00</span>
+                        <div class="timeline-content">
+                            <h5>Eiffel Tower Visit</h5>
+                            <p>Start your day with breathtaking views of the city</p>
+                            <span class="badge">Morning Activity</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">13:00</span>
+                        <div class="timeline-content">
+                            <h5>Lunch at Le Petit Café</h5>
+                            <p>Enjoy authentic French cuisine</p>
+                            <span class="badge">Meal</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">15:00</span>
+                        <div class="timeline-content">
+                            <h5>Louvre Museum</h5>
+                            <p>Discover world-class art collections</p>
+                            <span class="badge">Cultural</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="day">
+                    <h4>Day 2</h4>
+                    <div class="timeline-item">
+                        <span class="time">10:00</span>
+                        <div class="timeline-content">
+                            <h5>Montmartre Walking Tour</h5>
+                            <p>Explore the artistic neighborhood</p>
+                            <span class="badge">Morning Activity</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">14:00</span>
+                        <div class="timeline-content">
+                            <h5>Seine River Cruise</h5>
+                            <p>See Paris from a different perspective</p>
+                            <span class="badge">Afternoon Activity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="view-more">View Complete Itinerary</button>
+        </div>
+    </section>
+
+    <section id="tips" class="travel-tips">
+        <div class="section-header dark">
+            <h2>Travel Tips & Advice</h2>
+            <p>Expert recommendations to enhance your travel experience</p>
+        </div>
+        <div class="tips-container">
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <i class="fas fa-suitcase"></i>
+                </div>
+                <h3>Packing Essentials</h3>
+                <p>Learn how to pack efficiently for any trip duration or climate. Our comprehensive checklist ensures you'll never forget important items again.</p>
+                <a href="#" class="tip-link">Read Packing Guide <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <h3>Budget Travel</h3>
+                <p>Discover money-saving strategies that help you maximize experiences while minimizing expenses. Travel smarter, not cheaper!</p>
+                <a href="#" class="tip-link">Budget Tips <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3>Food Adventures</h3>
+                <p>Find the best local cuisine wherever you go. From street food to fine dining, our tips help you experience authentic flavors safely.</p>
+                <a href="#" class="tip-link">Food Guide <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <h3>Photography Tips</h3>
+                <p>Capture stunning travel memories with our expert photography advice. Works for smartphones and professional cameras alike!</p>
+                <a href="#" class="tip-link">Photography Guide <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="travel-gallery">
+        <div class="section-header">
+            <h2>Travel Gallery</h2>
+            <p>Inspiring images from travelers around the world</p>
+        </div>
+        <div class="gallery-filters">
+            <button class="gallery-filter active" data-filter="all">All Photos</button>
+            <button class="gallery-filter" data-filter="nature">Nature</button>
+            <button class="gallery-filter" data-filter="architecture">Architecture</button>
+            <button class="gallery-filter" data-filter="food">Food</button>
+            <button class="gallery-filter" data-filter="people">People</button>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.pexels.com/photos/1366909/pexels-photo-1366909.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Mountains">
+                <div class="gallery-overlay">
+                    <h4>Majestic Peaks</h4>
+                    <p>Swiss Alps</p>
+                    <span class="photographer">Photo by John Smith</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Temple">
+                <div class="gallery-overlay">
+                    <h4>Ancient Temple</h4>
+                    <p>Kyoto, Japan</p>
+                    <span class="photographer">Photo by Emma Lee</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Beach">
+                <div class="gallery-overlay">
+                    <h4>Tropical Paradise</h4>
+                    <p>Maldives</p>
+                    <span class="photographer">Photo by Mark Wilson</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="food">
+                <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Street Food">
+                <div class="gallery-overlay">
+                    <h4>Street Delicacies</h4>
+                    <p>Bangkok, Thailand</p>
+                    <span class="photographer">Photo by Sarah Johnson</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=400" alt="City Skyline">
+                <div class="gallery-overlay">
+                    <h4>Urban Skyline</h4>
+                    <p>New York City, USA</p>
+                    <span class="photographer">Photo by David Chen</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="people">
+                <img src="https://images.pexels.com/photos/837745/pexels-photo-837745.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Traveler">
+                <div class="gallery-overlay">
+                    <h4>The Explorer</h4>
+                    <p>Sahara Desert</p>
+                    <span class="photographer">Photo by Miguel Santos</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="food">
+                <img src="https://images.pexels.com/photos/1527603/pexels-photo-1527603.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Italian Food">
+                <div class="gallery-overlay">
+                    <h4>Italian Cuisine</h4>
+                    <p>Rome, Italy</p>
+                    <span class="photographer">Photo by Lisa Rossi</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="people">
+                <img src="https://images.pexels.com/photos/2409681/pexels-photo-2409681.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Festival">
+                <div class="gallery-overlay">
+                    <h4>Cultural Festival</h4>
+                    <p>Rio de Janeiro, Brazil</p>
+                    <span class="photographer">Photo by Carlos Mendez</span>
+                </div>
+            </div>
+        </div>
+        <button class="load-more">Load More Photos</button>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h2>Get Travel Inspiration</h2>
+                <p>Sign up for our newsletter to receive personalized travel tips, exclusive deals, and inspiring stories directly to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit" class="cta-btn primary">Subscribe</button>
+                </form>
+                <div class="newsletter-privacy">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>We respect your privacy. Unsubscribe at any time.</span>
+                </div>
+            </div>
+            <div class="newsletter-image">
+                <img src="https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Travel Newsletter">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Wanderlust</h3>
+                <p>Your trusted travel companion since 2023, helping travelers discover the world with confidence and ease.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Destinations</h4>
+                <ul>
+                    <li><a href="#">Europe</a></li>
+                    <li><a href="#">Asia</a></li>
+                    <li><a href="#">North America</a></li>
+                    <li><a href="#">South America</a></li>
+                    <li><a href="#">Africa</a></li>
+                    <li><a href="#">Oceania</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Travel Resources</h4>
+                <ul>
+                    <li><a href="#">Trip Planner</a></li>
+                    <li><a href="#">Travel Guides</a></li>
+                    <li><a href="#">Packing Tips</a></li>
+                    <li><a href="#">Travel Insurance</a></li>
+                    <li><a href="#">Budget Calculator</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Wanderlust Travel Companion. All rights reserved.</p>
+            <div class="footer-app-links">
+                <a href="#"><i class="fab fa-apple"></i> App Store</a>
+                <a href="#"><i class="fab fa-google-play"></i> Google Play</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="travelScript.js"></script>
+</body>
+</html>
